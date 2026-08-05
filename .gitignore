@@ -1,0 +1,63 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Apps
+apps/**/node_modules
+apps/**/.env
+apps/backend/dist
+apps/frontend/.next
+apps/frontend/out
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+coverage
+
+# Turbo
+.turbo
+
+# Vercel
+.vercel
+
+# Build Outputs
+.next/
+out/
+build
+dist
+
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+.DS_Store
+*.pem
+
+# Databases
+packages/database/sql/.env
+packages/database/sql/prisma/*.db
+packages/database/sql/prisma/*.sqlite
+packages/database/sql/node_modules
+packages/database/sql/.agents
+packages/database/sql/.claude
+packages/database/sql/.windsurf
+
+
+packages/database/no-sql/.env
+packages/database/no-sql/node_modules
+packages/database/no-sql/prisma/*.db
+packages/database/no-sql/prisma/*.sqlite
+packages/database/no-sql/.agents
+packages/database/no-sql/.claude
+packages/database/no-sql/.windsurf
